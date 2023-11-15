@@ -13,15 +13,14 @@
 
     <fragment
         android:id="@+id/navigation_announcement"
-        android:name="com.alomapp.alom.ui.dashboard.DashboardFragment"
+        android:name="com.alomapp.alom.ui.announcement.AnnouncementFragment"
         android:label="@string/title_announcement"
-        tools:layout="@layout/fragment_announcement" />
+        tools:layout="@layout/fragment_members" />
 
     <fragment
         android:id="@+id/navigation_members"
-        android:name="com.alomapp.alom.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_members" />
+        android:name="com.alomapp.alom.ui.dashboard.MembersFragment"
+        android:label="@string/title_members" />
     <fragment
         android:id="@+id/navigation_attendance"
         android:name="com.alomapp.alom.attendance"

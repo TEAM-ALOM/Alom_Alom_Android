@@ -1,13 +1,13 @@
-package com.alomapp.alom.ui.notifications
+package com.alomapp.alom.ui.announcement
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class AnnouncementViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "공지사항 작성하기"
     }
     val text: LiveData<String> = _text
 }

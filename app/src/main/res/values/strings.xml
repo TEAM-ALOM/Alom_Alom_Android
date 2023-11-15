@@ -6,4 +6,5 @@
     <string name="title_announcement">공지사항</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="announce_write">공지 작성하기</string>
 </resources>
