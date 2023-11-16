@@ -1,4 +1,4 @@
-package com.alomapp.alom.ui.dashboard
+package com.alomapp.alom.ui.members
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,7 +23,7 @@ class MembersFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val membersViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+            ViewModelProvider(this).get(MemversViewModel::class.java)
 
         _binding = FragmentMembersBinding.inflate(inflater, container, false)
         val root: View = binding.root

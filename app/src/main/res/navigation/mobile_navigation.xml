@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_members"
-        android:name="com.alomapp.alom.ui.dashboard.MembersFragment"
+        android:name="com.alomapp.alom.ui.members.MembersFragment"
         android:label="@string/title_members" />
     <fragment
         android:id="@+id/navigation_attendance"
