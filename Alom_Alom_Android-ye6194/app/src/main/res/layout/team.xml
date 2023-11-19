@@ -10,7 +10,7 @@
         android:layout_height="30dp"
         android:background="@drawable/groupname"
         android:gravity="center"
-        android:text="0조"
+        android:text="1조"
         android:textColor="@color/teal_700" />
 
     <TextView

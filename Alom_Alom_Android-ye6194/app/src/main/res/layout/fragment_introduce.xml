@@ -40,7 +40,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="저희 아롬에는 총 N분의 멘토가 있습니다! "
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="10sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
@@ -66,7 +67,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="N기 아롬은 총 67명이며, 회장님은 김윤회 이십니다! "
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="10sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
