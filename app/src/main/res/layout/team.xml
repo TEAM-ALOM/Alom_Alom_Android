@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/groupname"
+        android:gravity="center"
+        android:text="1조"
+        android:textColor="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="19 신짱구  20 최자두 20 퉁퉁이 21 정재현 21 이민형 21 나재민 22 춘식이"
+        android:textColor="@color/white" />
+</LinearLayout>
