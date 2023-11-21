@@ -13,9 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-<<<<<<< HEAD
-=======
 rootProject.name = "Alom"
->>>>>>> 239e0f88f6d5fc8f84926e944c3961d0fb3ee6a5
 include(":app")
  

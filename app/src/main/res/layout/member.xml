@@ -10,11 +10,11 @@
     <LinearLayout
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:background="@drawable/member"
+        android:background="@drawable/membermodule"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/stackView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="28dp"
