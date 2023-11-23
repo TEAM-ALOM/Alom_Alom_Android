@@ -42,9 +42,12 @@
         android:layout_marginTop="20dp"
 
         android:layout_marginRight="5dp"
-        android:text="    제목   제목을 입력하세요"
-        android:textSize="15sp"
+
+        android:hint="    제목   제목을 입력하세요"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
         android:textColor="@color/white"
+        android:singleLine="true"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -62,8 +65,9 @@
 
         android:layout_marginRight="5dp"
         android:layout_marginBottom="130dp"
-        android:text="    내용   공지사항을 입력하세요"
-        android:textSize="15sp"
+        android:hint="    내용   공지사항을 입력하세요"
+        android:textSize="16sp"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
 
         app:layout_constraintBottom_toBottomOf="parent"
