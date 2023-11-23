@@ -15,7 +15,8 @@
         android:id="@+id/navigation_announcement"
         android:name="com.alomapp.alom.ui.announcement.AnnouncementFragment"
         android:label="@string/title_announcement"
-        tools:layout="@layout/fragment_members" />
+        tools:layout="@layout/fragment_member" />
+
 
     <fragment
         android:id="@+id/navigation_members"
