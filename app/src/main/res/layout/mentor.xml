@@ -8,8 +8,8 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
         android:background="@drawable/mentorframe"
         android:gravity="center_horizontal"
         android:orientation="vertical">
@@ -21,12 +21,13 @@
 
             <ImageView
                 android:id="@+id/mentorImageView"
-                android:layout_width="50dp"
-                android:layout_height="100dp"
+                android:layout_width="59dp"
+                android:layout_height="59dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="16dp"
                 android:layout_weight="1"
-                android:src="@drawable/member" />
+                android:src="@drawable/member"
+                tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/mentorIntroView"
@@ -46,42 +47,46 @@
             android:id="@+id/mentorNameView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
+            android:layout_marginLeft="12dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginRight="12dp"
             android:text="19 Hyun Lee"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/mentorSpecView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
+            android:layout_marginLeft="12dp"
             android:layout_marginTop="0dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginRight="12dp"
             android:text="Programer"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/mentorTeamView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
+            android:layout_marginLeft="12sp"
             android:layout_marginTop="0dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginRight="12sp"
             android:text="Team : Development 1"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/mentorStackrv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/stack" />
+            tools:listitem="@layout/stack"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
     </LinearLayout>
 </LinearLayout>

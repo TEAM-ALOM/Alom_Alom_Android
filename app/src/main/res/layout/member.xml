@@ -8,8 +8,8 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="152dp"
+        android:layout_height="209dp"
         android:background="@drawable/membermodule"
         android:orientation="vertical">
 
@@ -17,8 +17,8 @@
             android:id="@+id/stackView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
             android:text="Android"
             android:textColor="@color/alom_green" />
 
