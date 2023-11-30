@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Alom</string>
+    <string name="title_attendance">출석체크</string>
+    <string name="title_home">홈</string>
+    <string name="title_members">부원</string>
+    <string name="title_announcement">공지사항</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="announce_write">공지 작성하기</string>
+    <string name="introMentor">아롬의 멘토를 소개할게요!</string>
+    <string name="detailMember">N기 아롬은 총 67명이며, 회장님은 김윤회 이십니다!</string>
+    <string name="detailMentor">저희 아롬에는 총 N분의 멘토가 있습니다!</string>
+    <string name="introMember">아롬의 부원을 소개할게요!</string>
+</resources>

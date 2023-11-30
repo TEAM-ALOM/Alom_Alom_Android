@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Alom" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/alom_green</item>
+        <item name="colorPrimaryVariant">@color/alom_green</item>
+        <item name="colorOnPrimary">@color/alom_green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/alom_green</item>
+        <item name="colorSecondaryVariant">@color/alom_green</item>
+        <item name="colorOnSecondary">@color/alom_green</item>
+        <!-- Status bar color. -->
+        <!--<item name="android:statusBarColor">#151515</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="CustomRecyclerViewScrollbarStyle">
+        <item name="android:scrollbars">horizontal</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/rounded_filled_background</item> <!-- 가로 스크롤바 thumb 설정 -->
+        <item name="android:scrollbarSize">24dp</item> <!-- 스크롤바 크기 조절 -->
+    </style>
+
+</resources>
