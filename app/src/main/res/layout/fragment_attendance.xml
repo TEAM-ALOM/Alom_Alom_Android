@@ -8,10 +8,8 @@
     android:background="@color/alom_background"
     tools:context=".attendance">
 
-    <!-- 1. 출석, 학과, 학번, 이름 똑같은 비율로 정렬
-         2. 출석 버튼 클릭하면 바뀌게
-         3. 출석 버튼 배경 투명한 이미지로 변경
-     -->
+    <!-- 1. 출석 버튼 클릭하면 바뀌게
+         2. 출석 버튼 배경 투명한 이미지로 변경 -->
 
     <TextView
         android:id="@+id/attendance_status"
