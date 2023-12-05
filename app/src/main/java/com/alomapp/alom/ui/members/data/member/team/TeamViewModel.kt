@@ -1,9 +1,10 @@
-package com.alomapp.alom.ui.members.data
+package com.alomapp.alom.ui.members.data.member.team
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
-class MemberViewModel {
+class TeamViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is dashboard Fragment"

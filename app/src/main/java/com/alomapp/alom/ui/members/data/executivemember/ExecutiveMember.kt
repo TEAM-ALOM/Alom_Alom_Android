@@ -1,4 +1,4 @@
-package com.alomapp.alom.ui.members.data
+package com.alomapp.alom.ui.members.data.executivemember
 
 data class ExecutiveMember(
     val name: String,
