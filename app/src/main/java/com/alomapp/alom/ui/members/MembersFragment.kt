@@ -13,13 +13,13 @@
     import com.alomapp.alom.ui.members.data.executivemember.ExecutiveMember
     import com.alomapp.alom.ui.members.data.executivemember.ExecutiveViewModel
     import com.alomapp.alom.ui.members.data.member.Member
+    import com.alomapp.alom.ui.members.data.member.MemberAdapter
     import com.alomapp.alom.ui.members.data.member.team.Team
 
     class MembersFragment : Fragment() {
 
         private var _binding: FragmentMemberBinding? = null
         private val executiveList = mutableListOf<ExecutiveMember>() // 임원진 데이터 리스트
-        private val teamList= mutableListOf<Team>()//멤버 데이터 리스트
         private val memberList= mutableListOf<Member>()
         private val binding get() = _binding!!
 
@@ -35,17 +35,15 @@
             val root: View = binding.root
             addExecutiveMembers()
             addMember()
-            val recyclerView: RecyclerView = binding.mentorRv
-            recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            val mentorRecyclerView: RecyclerView = binding.mentorRv
+            mentorRecyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            val mentorAdaptor = ExecutiveAdapter(executiveList)
+            mentorRecyclerView.adapter = mentorAdaptor
+            val memberRecyclerView: RecyclerView = binding.memberRv
+            memberRecyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            val memberAdaptor = MemberAdapter(memberList)
+            memberRecyclerView.adapter = memberAdaptor
 
-
-            val adapter = ExecutiveAdapter(executiveList)
-            recyclerView.adapter = adapter
-
-            /*val textView: TextView = binding.mentorRv
-            membersViewModel.text.observe(viewLifecycleOwner) {
-                textView.text = it
-            }*/
             return root
         }
 
@@ -64,12 +62,12 @@
         }
         private fun addMember() {
             val teamList = mutableListOf<Team>()
-
-            val Team1=Team("1조", "19 신짱구  20 최자두 20 퉁퉁이 21 정재현 21 이민형 21 나재민 22 춘식이")
-            val Team2=Team("2조", "19 신짱구  20 최자두 20 퉁퉁이 21 정재현 21 이민형 21 나재민 22 춘식이")
-            val Team3=Team("3조", "19 신짱구  20 최자두 20 퉁퉁이 21 정재현 21 이민형 21 나재민 22 춘식이")
-            val Team4=Team("4조", "19 신짱구  20 최자두 20 퉁퉁이 21 정재현 21 이민형 21 나재민 22 춘식이")
-            val Team5=Team("5조", "19 신짱구  20 최자두 20 퉁퉁이 21 정재현 21 이민형 21 나재민 22 춘식이")
+            for (i in 1..5){
+                val teamName = "${i}조"
+                val teamMembers = "${i*5} 신짱구  ${i*5-2} 최자두 ${i*4} 퉁퉁이 ${i*5-4} 정재현 ${i*5-3} 이민형 ${i*4+2} 나재민 ${i*3} 춘식이" // 여기에 해당 팀의 멤버 정보 입력
+                val team = Team(teamName, teamMembers)
+                teamList.add(team)
+            }
 
             // 각 팀을 해당하는 스택명으로 Member 객체에 추가
             val androidMember = Member("Android", teamList)
