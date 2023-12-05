@@ -1,3 +1,4 @@
+package com.alomapp.alom.ui.members.data.executivemember
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.alomapp.alom.R
-import com.alomapp.alom.ui.members.data.ExecutiveMember
 
 class ExecutiveAdapter(private val executiveList: List<ExecutiveMember>) :
     RecyclerView.Adapter<ExecutiveAdapter.ExecutiveViewHolder>() {
