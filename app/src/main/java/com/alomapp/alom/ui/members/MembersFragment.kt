@@ -39,11 +39,70 @@
             mentorRecyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             val mentorAdaptor = ExecutiveAdapter(executiveList)
             mentorRecyclerView.adapter = mentorAdaptor
+            mentorRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {//가운데 항목 강조 메소드
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                    super.onScrolled(recyclerView, dx, dy)
+
+                    val layoutManager = recyclerView.layoutManager as LinearLayoutManager?
+                    layoutManager?.let {
+                        val firstVisibleItemPosition = it.findFirstVisibleItemPosition()
+                        val lastVisibleItemPosition = it.findLastVisibleItemPosition()
+
+                        // 화면에 보이는 아이템 중 가운데에 위치한 아이템 인덱스 계산
+                        val centerItemPosition = (firstVisibleItemPosition + lastVisibleItemPosition) / 2
+
+                        // 각 아이템에 대한 크기 조절
+                        for (i in firstVisibleItemPosition..lastVisibleItemPosition) {
+                            val itemView = it.findViewByPosition(i)
+                            if (itemView != null) {
+                                if (i == centerItemPosition) {
+                                    // 화면 상 가운데에 위치한 아이템 크기를 크게 설정
+                                    itemView.scaleX = 1f
+                                    itemView.scaleY = 1f
+                                } else {
+                                    // 다른 아이템들은 기본 크기로 설정
+                                    itemView.scaleX = 0.7f
+                                    itemView.scaleY = 0.7f
+                                }
+                            }
+                        }
+                    }
+                }
+            })
             val memberRecyclerView: RecyclerView = binding.memberRv
             memberRecyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             val memberAdaptor = MemberAdapter(memberList)
             memberRecyclerView.adapter = memberAdaptor
+            memberRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {//가운데 항목 강조 메소드
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
 
+                val layoutManager = recyclerView.layoutManager as LinearLayoutManager?
+                layoutManager?.let {
+                    val firstVisibleItemPosition = it.findFirstVisibleItemPosition()
+                    val lastVisibleItemPosition = it.findLastVisibleItemPosition()
+
+                    // 화면에 보이는 아이템 중 가운데에 위치한 아이템 인덱스 계산
+                    val centerItemPosition = (firstVisibleItemPosition + lastVisibleItemPosition) / 2
+
+                    // 각 아이템에 대한 크기 조절
+                    for (i in firstVisibleItemPosition..lastVisibleItemPosition) {
+                        val itemView = it.findViewByPosition(i)
+                        if (itemView != null) {
+                            if (i == centerItemPosition) {
+                                // 화면 상 가운데에 위치한 아이템 크기를 크게 설정
+                                itemView.scaleX = 1f
+                                itemView.scaleY = 1f
+                            } else {
+                                // 다른 아이템들은 기본 크기로 설정
+                                itemView.scaleX = 0.7f
+                                itemView.scaleY = 0.7f
+                            }
+                        }
+                    }
+                }
+            }
+            })
             return root
         }
 
