@@ -49,15 +49,16 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="70dp"
         android:layout_weight="1"
-        android:layout_height="match_parent"
         android:padding="5dp"
         android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/activity_product_detail" />
+
 
 </LinearLayout>

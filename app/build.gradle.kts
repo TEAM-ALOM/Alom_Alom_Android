@@ -51,5 +51,6 @@ dependencies {
 
     //리사이클러뷰
     implementation("androidx.recyclerview:recyclerview:1.2.1")
-
+    //카드뷰
+    implementation ("androidx.cardview:cardview:1.0.0")
 }
