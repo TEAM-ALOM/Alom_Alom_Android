@@ -20,7 +20,7 @@
 
         <ImageView
             android:id="@+id/memberMenuView"
-            android:layout_width="36dp"
+            android:layout_width="37dp"
             android:layout_height="36dp"
             android:src="@drawable/member"
             app:layout_constraintBottom_toTopOf="@+id/mentorPrView"
