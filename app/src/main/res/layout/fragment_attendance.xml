@@ -8,6 +8,9 @@
     android:background="@color/alom_background"
     tools:context=".attendance">
 
+    <!-- 1. 출석 버튼 클릭하면 바뀌게
+         2. 출석 버튼 배경 투명한 이미지로 변경 -->
+
     <TextView
         android:id="@+id/attendance_status"
         android:layout_width="wrap_content"
@@ -67,59 +70,79 @@
 
     <TextView
         android:id="@+id/attendance"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-
+        app:layout_constraintHorizontal_weight="1"
         android:layout_marginTop="28dp"
-        android:layout_marginStart="25dp"
+
         android:text="출석"
         android:textColor="@color/alom_green"
         android:textSize="15sp"
+        android:gravity="center"
 
-        app:layout_constraintTop_toBottomOf="@id/place"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/major"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/place" />
 
     <TextView
         android:id="@+id/major"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-
+        app:layout_constraintHorizontal_weight="1"
         android:layout_marginTop="28dp"
+
         android:text="학과"
         android:textColor="@color/white"
         android:textSize="15sp"
+        android:gravity="center"
 
-        app:layout_constraintTop_toBottomOf="@id/place"
+        app:layout_constraintEnd_toStartOf="@id/studentID"
+
         app:layout_constraintStart_toEndOf="@id/attendance"
-        app:layout_constraintEnd_toStartOf="@id/studentID"/>
+        app:layout_constraintTop_toBottomOf="@id/place" />
 
     <TextView
         android:id="@+id/studentID"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-
+        app:layout_constraintHorizontal_weight="1"
         android:layout_marginTop="28dp"
+
         android:text="학번"
         android:textColor="@color/white"
         android:textSize="15sp"
+        android:gravity="center"
 
-        app:layout_constraintTop_toBottomOf="@id/place"
+        app:layout_constraintEnd_toStartOf="@id/name"
+
         app:layout_constraintStart_toEndOf="@id/major"
-        app:layout_constraintEnd_toStartOf="@id/name"/>
+        app:layout_constraintTop_toBottomOf="@id/place" />
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-
-        android:layout_marginEnd="25dp"
+        app:layout_constraintHorizontal_weight="1"
         android:layout_marginTop="28dp"
+
         android:text="이름"
         android:textColor="@color/white"
         android:textSize="15sp"
+        android:gravity="center"
 
-        app:layout_constraintTop_toBottomOf="@id/place"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@id/studentID"
+        app:layout_constraintTop_toBottomOf="@id/place" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/attendance_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/attendance"
+        tools:listitem="@layout/attendance_list" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

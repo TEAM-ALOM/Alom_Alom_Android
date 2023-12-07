@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/check_button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/check_trans"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/major"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="컴퓨터공학과"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/studentID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="21000000"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="박ㅇㅇ"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="10dp" />
+</LinearLayout>
