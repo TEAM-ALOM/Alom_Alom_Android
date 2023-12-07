@@ -1,11 +1,10 @@
-package values
+package com.alomapp.alom
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.alomapp.alom.R
 
 class MemberAdapter(val itemList: ArrayList<Members>) :
         RecyclerView.Adapter<MemberAdapter.MemberViewHolder>() {
