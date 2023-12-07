@@ -35,6 +35,7 @@ class TeamAdapter(private var teamList: List<Team>) :
         return teamList.size
     }
     // 외부에서 팀 리스트를 설정하기 위한 메서드 추가
+    @SuppressLint("NotifyDataSetChanged")
     fun setTeamList(newList: List<Team>) {
         teamList = newList
         notifyDataSetChanged()
