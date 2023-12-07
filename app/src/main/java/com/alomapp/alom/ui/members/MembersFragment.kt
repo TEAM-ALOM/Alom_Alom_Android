@@ -8,6 +8,7 @@
     import androidx.lifecycle.ViewModelProvider
     import androidx.recyclerview.widget.LinearLayoutManager
     import androidx.recyclerview.widget.RecyclerView
+    import com.alomapp.alom.R
     import com.alomapp.alom.databinding.FragmentMemberBinding
     import com.alomapp.alom.ui.members.data.executivemember.ExecutiveAdapter
     import com.alomapp.alom.ui.members.data.executivemember.ExecutiveMember
@@ -113,11 +114,11 @@
         }
         private fun addExecutiveMembers() {
             // 임원진 데이터 추가
-            executiveList.add(ExecutiveMember("라이언", "안드로이드 멘토", "안녕하세용", "18", "Alom"))
-            executiveList.add(ExecutiveMember("춘식이", "서버 멘토", "헬로~", "22", "Mola"))
-            executiveList.add(ExecutiveMember("뿡뿡이", "IOS 멘토", "하이!!", "20", "Zero"))
-            executiveList.add(ExecutiveMember("뽀로로", "플러터 멘토", "놀자~~", "12", "OG"))
-            executiveList.add(ExecutiveMember("짱구", "회장", "정기 모임 공지", "18", "ZZang"))
+            executiveList.add(ExecutiveMember("라이언", "안드로이드 멘토", "안녕하세용", "18", "Alom",R.drawable.pr1))
+            executiveList.add(ExecutiveMember("춘식이", "서버 멘토", "헬로~", "22", "Mola",R.drawable.pr2))
+            executiveList.add(ExecutiveMember("뿡뿡이", "IOS 멘토", "하이!!", "20", "Zero",R.drawable.pr3))
+            executiveList.add(ExecutiveMember("뽀로로", "플러터 멘토", "놀자~~", "12", "OG",R.drawable.pr1))
+            executiveList.add(ExecutiveMember("짱구", "회장", "정기 모임 공지", "18", "ZZang",R.drawable.pr2))
         }
         private fun addMember() {
             val teamList = mutableListOf<Team>()

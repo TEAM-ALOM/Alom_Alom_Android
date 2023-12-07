@@ -5,6 +5,7 @@ data class ExecutiveMember(
     val role: String,
     val introduction: String,
     val studentID: String,
-    val team: String
+    val team: String,
+    val image:Int
 )
 

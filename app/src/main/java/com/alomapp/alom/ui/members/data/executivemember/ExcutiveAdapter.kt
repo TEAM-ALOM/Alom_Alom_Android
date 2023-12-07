@@ -30,11 +30,12 @@ class ExecutiveAdapter(private val executiveList: List<ExecutiveMember>) :
         val currentItem = executiveList[position]
 
         // currentItem에서 데이터를 가져와서 ViewHolder에 설정
-        holder.mentorImageView.setImageResource(R.drawable.member) // 멘토 이미지 설정
+        holder.mentorImageView.setImageResource(currentItem.image) // 멘토 이미지 설정
         holder.mentorIntroView.text = currentItem.introduction // 멘토 소개말 설정
         holder.mentorNameView.text = "${currentItem.studentID} ${currentItem.name}" // 학번 및 이름 설정
         holder.mentorSpecView.text = currentItem.role // 역할 설정
         holder.mentorTeamView.text = "Team: ${currentItem.team}" // 소속팀 설정
+
     }
 
     override fun getItemCount(): Int {
