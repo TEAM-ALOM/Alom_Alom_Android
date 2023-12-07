@@ -48,11 +48,11 @@
             android:id="@+id/text"
             android:layout_width="353dp"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:text="@string/activity_description"
-            android:textColor="#CCC6C6"
-            android:layout_below="@+id/date"
-            android:layout_centerHorizontal="true"/>
+            android:textColor="#CCC6C6" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -69,11 +69,17 @@
             android:id="@+id/imageView8"
             android:layout_width="7dp"
             android:layout_height="7dp"
-            android:background="#808080"
-            android:contentDescription="@string/image_description"
             android:layout_below="@+id/text"
             android:layout_marginTop="8dp"
-            android:layout_toEndOf="@+id/title"/>
+            android:layout_toEndOf="@+id/title"
+            android:background="#808080"
+            android:contentDescription="@string/image_description" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
