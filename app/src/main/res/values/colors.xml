@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="alom_green">#00CA73</color>
     <color name="alom_background">#151515</color>
+    <color name="alom_green_trans">#006D3E</color>
 </resources>
