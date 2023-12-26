@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/navigation_attendance"
-        android:icon="@drawable/check"
-        android:title="@string/title_attendance" />
+        android:icon="@drawable/check_trans"
+        android:title="@string/title_attendance"
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/hand"
-        android:title="@string/title_home" />
+        android:icon="@drawable/hand_trans"
+        android:title="@string/title_home"
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/navigation_members"
-        android:icon="@drawable/member"
-        android:title="@string/title_members" />
+        android:icon="@drawable/member_trans"
+        android:title="@string/title_members"
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/navigation_announcement"
-        android:icon="@drawable/announcement"
-        android:title="@string/title_announcement" />
+        android:icon="@drawable/announcement_trans"
+        android:title="@string/title_announcement"
+        app:showAsAction="always"/>
 </menu>
